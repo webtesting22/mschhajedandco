@@ -1,0 +1,46 @@
+.scroll-container {
+    width: 100%;
+    overflow: hidden; /* Hide overflow to create the scroll effect */
+    position: relative;
+  }
+  
+  .scroll-content {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  .box {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px; /* Space between each box */
+    padding: 10px;
+  }
+  
+  .box img {
+    width: 40px;
+    margin-right: 10px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  
+  .box p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+  }
+  .marquee-content{
+    margin-left: -1200px;
+  }
+  
+  /* Animation to scroll boxes from right to left */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%); /* Start offscreen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move offscreen to the left */
+    }
+  }
+  

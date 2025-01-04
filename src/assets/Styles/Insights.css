@@ -1,0 +1,55 @@
+#InSightsContainer {
+    padding-top: 120px;
+}
+
+.InsightsHeaderContainer h1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0px;
+    /* color: #071D96; */
+    text-align: center;
+
+}
+
+.BlogPostImageContainer {
+    height: 450px;
+    /* width: 100%; */
+    overflow: hidden;
+    /* padding: 20px; */
+}
+
+
+.BlogPostImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.BlogPostCardContainer {
+    background-color: #efefef;
+    height: 100%;
+    transition: .5s;
+}
+
+.BlogPostCardContainer:hover .BlogPostImageContainer img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+#InSightsContainer .ant-row .ant-col {
+    padding: 10px;
+}
+
+.BlogPostContentContainer h2 {
+    font-size: var(--secondSectionHeading);
+}
+
+.BlogPostContentContainer {
+    padding: 20px;
+}
+
+.BlogPostContentContainer hr {
+    opacity: 1;
+    border: 1px solid white;
+}

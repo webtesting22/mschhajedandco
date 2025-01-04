@@ -1,0 +1,108 @@
+#FooterContainer .ant-row .ant-col {
+    width: 100%;
+
+}
+
+#FooterContainer {
+    margin-top: 120px;
+    background-color: var(--sectionColor);
+    padding: 70px 0px;
+}
+
+.LogoandNewsLaterContainer p {
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.LogoandNewsLaterContainer span {
+    color: #80868d;
+    text-transform: uppercase;
+}
+
+.LogoandNewsLaterContainer .ant-input {
+    /* margin-top: 30px; */
+    background-color: transparent;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+
+.LogoandNewsLaterContainer .ant-input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.LogoandNewsLaterContainer .ant-input:focus {
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+}
+
+.LogoandNewsLaterContainer .ant-input:hover {
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+}
+
+.LogoandNewsLaterContainer h1 {
+    font-size: var(--secondSectionHeading);
+    color: var(--WhiteColor);
+    font-weight: 400;
+}
+
+.LogoandNewsLaterContainer svg {
+    color: white;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.CompanyContainer h4,
+.SocialContainer h4,
+.LegalInfo h4 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.CompanyContainer,
+.SocialContainer,
+.LegalInfo {
+    padding-left: 30px;
+}
+
+.CompanyContainer ul,
+.LegalInfo ul {
+    padding: 0px;
+}
+
+.CompanyContainer ul li {
+    list-style: none;
+    padding: 10px 0px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.CompanyContainer ul li:hover {
+    color: var(--brandColor);
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.LegalInfo ul li {
+    list-style: none;
+    padding: 10px 0px;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.LegalInfo ul li:hover {
+    color: var(--brandColor);
+    margin-left: 10px;
+    transition: .5s;
+    cursor: pointer;
+}

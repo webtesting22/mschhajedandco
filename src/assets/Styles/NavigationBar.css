@@ -1,0 +1,102 @@
+#NavigationBarContainer {
+    padding: 0px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+    height: 90px;
+    max-width: 100%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    z-index: 100;
+    transition: top 0.3s ease-in-out;
+    background-color: var(--sectionColor);
+    /* Smooth transition */
+}
+
+#NavigationBarContainer.hide {
+    top: -90px;
+    transition: .5s;
+    /* Move the navbar up to hide it */
+}
+
+#NavigationBarContainer.show {
+    top: 0;
+    transition: .5s;
+    /* Keep the navbar at the top when visible */
+}
+
+.NavigationBarMainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.NavigationLinksContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.navButton {
+    background: transparent !important;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+}
+
+.navButton:hover {
+    color: var(--brandColor) !important;
+}
+
+.navButton:hover::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    display: inline-block;
+    background-color: white;
+}
+
+.menuButton {
+    display: none;
+    /* Hide menu button on desktop */
+}
+
+.ant-dropdown {
+    padding-top: 26px;
+}
+
+.ant-dropdown-menu {
+    padding: 20px !important;
+}
+
+.ant-dropdown-menu .ant-dropdown-menu-item {
+    padding: 10px 0px !important;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.ant-dropdown-menu .ant-dropdown-menu-item:hover {
+    transition: .5s;
+    transform: translateX(10px);
+    color: var(--brandColor) !important;
+    background-color: transparent !important;
+    font-weight: 600;
+}
+
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .NavigationLinksContainer {
+        display: none;
+        /* Hide normal links on mobile */
+    }
+
+    .menuButton {
+        display: block;
+        /* Show menu button on mobile */
+    }
+}

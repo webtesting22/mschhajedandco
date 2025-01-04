@@ -1,0 +1,134 @@
+#HomeHeroContainer {
+    background-color: var(--sectionColor);
+    margin-bottom: 300px;
+}
+
+#HomeHeroContainer .HomeHeroMainContainer {
+    height: 800px;
+    padding-top: 170px;
+    /* width: 100%; */
+}
+
+#HomeHeroContainer .HomeHeroMainContainer h1 {
+    color: var(--WhiteColor);
+    font-size: 66px;
+    margin: 0px;
+}
+
+#HomeHeroContainer .HomeHeroMainContainer h2 {
+    color: transparent;
+    /* Make the fill transparent */
+    -webkit-text-stroke: 2px var(--WhiteColor);
+    /* Apply the stroke */
+    font-size: 66px;
+    margin: 8px 0px;
+}
+
+#HomeHeroContainer .HeroContainerParagraph p {
+    font-size: 24px;
+    margin-top: 0px;
+    color: var(--WhiteColor);
+}
+
+.CompanyInfoRow {
+    padding-top: 70px;
+}
+
+.ClipPathImageContainer {
+    height: 600px;
+    width: 100%;
+    /* Container width remains 100% */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    transform: translateY(-300px);
+    /* Initial translateY */
+    transition: transform 1s ease-in-out;
+    /* Apply only translateY transition initially */
+    border-radius: 30px;
+}
+
+.ClipPathImageContainer img {
+    width: 50%;
+    /* Initial width of the image */
+    transition: width 1s ease-in-out;
+    /* Animate image width */
+}
+
+.ClipPathImageContainer.animateWidth img {
+    width: 100%;
+    /* Final width of the image */
+}
+
+.ClipPathImageContainer.animateTransform {
+    transform: translateY(0);
+    /* Transition translateY after width completes */
+    transition: transform 2s ease-in-out;
+    /* Transition transform */
+}
+
+.CompanyDetailsContainer {
+    display: flex;
+    gap: 30px;
+    padding-left: 50px;
+
+}
+
+.CompanyDetailsContainer h2 {
+    font-size: 40px !important;
+}
+
+.CompanyDetailsContainer div p {
+    color: var(--WhiteColor);
+}
+
+.CompanyDetailsContainer>div:last-child {
+    padding-left: 50px;
+}
+
+/* 
+#HomeHeroContainer .HomeHeroMainContainer .ClipPathImageContainer img{
+    width: 100%;
+} */
+
+@media (max-width:900px){
+    #AboutCompanyHomeContainer .SectionPadding{
+        padding: 0px !important;
+    }
+    #HomeHeroContainer {
+        background-color: var(--sectionColor);
+        margin-bottom: 200px;
+    }
+    #HomeHeroContainer .HomeHeroMainContainer h1 {
+        color: var(--WhiteColor);
+        font-size: 45px;
+        margin: 0px;
+    }
+    #HomeHeroContainer .HomeHeroMainContainer h2 {
+        color: transparent;
+        /* Make the fill transparent */
+        -webkit-text-stroke: 2px var(--WhiteColor);
+        /* Apply the stroke */
+        font-size: 45px;
+        margin: 8px 0px;
+    }
+
+.ClipPathImageContainer {
+    height: 300px;
+    width: 100%;
+    /* Container width remains 100% */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    transform: translateY(-300px);
+    /* Initial translateY */
+    transition: transform 1s ease-in-out;
+    /* Apply only translateY transition initially */
+    border-radius: 30px;
+}
+
+}

@@ -1,0 +1,23 @@
+import React from "react";
+import HomeHero from "../Components/HomeHero/HomeHero";
+import AboutComapanyHome from "../Components/AboutCompanyHome/AboutCompanyHome";
+import PracticesHomeCards from "../Components/PracticesHomeCards/PracticesHomeCards";
+import AboutBrandVideo from "../Components/AboutComapanyVideo/AboutBrandVideo";
+import Sectors from "../Components/Sectors/Sectors";
+import InSights from "../Components/InSights/InSights";
+
+const HomePageRoutes = () => {
+    return (
+        <>
+            {/* Inside it all the home Page Shows component declared here */}
+            {/* HeroComponent */}
+            <HomeHero />
+            <AboutComapanyHome />
+            <PracticesHomeCards />
+            <AboutBrandVideo/>
+            <Sectors/>
+            <InSights/>
+        </>
+    )
+}
+export default HomePageRoutes

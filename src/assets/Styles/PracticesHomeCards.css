@@ -1,0 +1,110 @@
+.PracticeCardStyleContainer {
+    max-width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.CardBodyContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.CardBodyContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.CardBodyContainer::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.241);
+    position: absolute;
+    opacity: 1;
+    transition: .5s;
+}
+
+.PracticeCardStyleContainer:hover .CardBodyContainer::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.714);
+    /* position: absolute; */
+    opacity: 1;
+    transition: .5s;
+}
+
+
+
+.CardImageHomeContainer {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.CardContentContainer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    right: 0px;
+    left: 0px;
+    padding: 15px 20px;
+    backdrop-filter: blur(1px);
+    /* transform: translatey(60px); */
+}
+
+.PracticeCardStyleContainer:hover .CardContentContainer{
+    backdrop-filter: blur(10px);
+}
+.CardContentContainer h4 {
+    color: var(--WhiteColor);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    width: 100%;
+    /* text-align: center; */
+    margin-top: 0px;
+
+}
+
+.CardContentContainer p {
+    /* text-align: center; */
+    margin-top: 0px;
+    color: var(--WhiteColor);
+    font-size: 15px;
+    width: 100%;
+
+}
+
+.PracticeCardStyleContainer .AnimatedBtnContainer {
+    width: 100%;
+}
+
+.PracticeCardStyleContainer .AnimatedBtnContainer button {
+    padding: 8px 15px !important;
+    font-size: 10px;
+    height: 35px;
+    background-color: #931e9554 !important;
+}
+.PracticesHomeMainContainer{
+    padding-bottom: 120px;
+}
+.PracticesHomeMainContainer h1{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0px;
+    /* color: #071D96; */
+    text-align: center;
+}
