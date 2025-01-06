@@ -3,6 +3,7 @@ import "../../assets/Styles/Footer.css"
 import { Row, Col, Input } from "antd";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Navigationlinks from "../NavigationBar/NavigationLinksData";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
@@ -51,6 +52,9 @@ const Footer = () => {
                             </div>
                         </Col>
                     </Row>
+                </div>
+                <div className="CopyWriteTextContainer">
+                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">OutLead solutions.</Link> All rights reserved.</p>
                 </div>
             </section>
         </>

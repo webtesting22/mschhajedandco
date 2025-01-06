@@ -3,6 +3,7 @@ import { Drawer, Button, Menu, Dropdown, Space, Collapse } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import Navigationlinks from "./NavigationLinksData";// Assuming Navigationlinks file is imported here
 import "../../assets/Styles/NavigationBar.css";
+import { Link } from "react-router-dom";
 
 const { Panel } = Collapse;
 
@@ -10,6 +11,18 @@ const NavigationBar = () => {
     const [scrollingDown, setScrollingDown] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [drawerVisible, setDrawerVisible] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.scrollY;
+            setScrollPosition(currentScrollPos);
+            setScrollingDown(currentScrollPos > 200);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const handleScroll = () => {
         if (window.scrollY > lastScrollY) {
@@ -65,7 +78,7 @@ const NavigationBar = () => {
             } else {
                 return (
                     <Button className="navButton" key={index}>
-                        {navItem.link}
+                        <Link to={navItem.path}>{navItem.link}</Link>
                     </Button>
                 );
             }
@@ -96,6 +109,8 @@ const NavigationBar = () => {
             <section
                 id="NavigationBarContainer"
                 className={scrollingDown ? "hide" : "show"}
+
+
             >
                 <div className="NavigationBarMainContainer">
                     <div className="LogoContainer">

@@ -7,6 +7,7 @@
     margin-top: 120px;
     background-color: var(--sectionColor);
     padding: 70px 0px;
+    padding-bottom: 0px;
 }
 
 .LogoandNewsLaterContainer p {
@@ -105,4 +106,30 @@
     margin-left: 10px;
     transition: .5s;
     cursor: pointer;
+}
+.CopyWriteTextContainer{
+    background-color: rgb(18, 18, 18);
+padding: 20px 0px;
+border-top: 1px solid rgba(255, 255, 255, 0.251);
+margin-top: 20px;
+}
+.CopyWriteTextContainer p{
+    text-align: center;
+    margin: 0px;
+    color: white;
+    font-size:16px;
+}
+.CopyWriteTextContainer a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width:900px){
+    .CompanyContainer,
+.SocialContainer,
+.LegalInfo {
+    padding-left: 10px;
+}
 }

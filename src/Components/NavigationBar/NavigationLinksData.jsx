@@ -42,7 +42,7 @@ const Navigationlinks = [
     },
     {
         link: "ABOUT US",
-        path: ""
+        path: "/about-us"
     },
     {
         link: "CAREER",
