@@ -1,3 +1,7 @@
+
+#AnimatedSectorsContainer{
+  padding-bottom: 120px;
+}
 .scroll-container {
     width: 100%;
     overflow: hidden; /* Hide overflow to create the scroll effect */
@@ -44,3 +48,4 @@
     }
   }
   
+ 

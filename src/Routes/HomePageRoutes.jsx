@@ -13,9 +13,9 @@ const HomePageRoutes = () => {
             {/* HeroComponent */}
             <HomeHero />
             <AboutComapanyHome />
-            <PracticesHomeCards />
             <AboutBrandVideo/>
             <Sectors/>
+            <PracticesHomeCards />
             <InSights/>
         </>
     )
