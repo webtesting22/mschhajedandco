@@ -4,6 +4,7 @@ import HomePageRoutes from "./HomePageRoutes";
 import NavigationBar from "../Components/NavigationBar/Navigationbar";
 import Footer from "../Components/Footer/Footer";
 import AboutUs from "../Components/AboutUsComponent/AboutUs";
+import AllBlogs from "../Components/AllBlogs/AllBlogs";
 
 const MainRoutes = () => {
     return (
@@ -12,6 +13,7 @@ const MainRoutes = () => {
             <Routes>
                 <Route path="/" element={<HomePageRoutes />} />
                 <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/insights-newsroom" element={<AllBlogs />} />
             </Routes>
             <Footer/>
         </Router>

@@ -81,7 +81,7 @@
 #HomeHeroContainer .HomeHeroMainContainer h2 {
     color: transparent;
     /* Make the fill transparent */
-    -webkit-text-stroke: 2px var(--WhiteColor);
+    -webkit-text-stroke: 0.3px var(--WhiteColor);
     /* Apply the stroke */
     font-size: 66px;
     margin: 8px 0px;

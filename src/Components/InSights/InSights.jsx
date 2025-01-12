@@ -1,8 +1,9 @@
 import React from "react";
 import "../../assets/Styles/Insights.css"
 import { Row, Col } from "antd";
-
+import BlogData from "./BlogData";
 const InSights = () => {
+
     return (
         <>
             <section id="InSightsContainer">
@@ -12,22 +13,26 @@ const InSights = () => {
                     </div>
                     <div>
                         <Row>
-                            <Col lg={12} md={24} style={{ width: "100%" }}>
-                                <div className="BlogPostCardContainer">
-                                    <div className="BlogPostImageContainer">
-                                        <img src="https://cdn.prod.website-files.com/672087ec85cbe61882560dcd/6741e41f1d53c266ff81d80d_Mask%20group.jpg" alt="" />
-                                    </div>
-                                    <div className="BlogPostContentContainer">
-                                        <h2>Relaxation in Due Dates</h2>
-                                        <hr />
-                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                            <p>October 19, 2020</p>
-                                            <p>Karan Patel</p>
+                            {BlogData.map((item, index) => (
+                                <Col lg={12} md={24} style={{ width: "100%" }} key={index}>
+                                    <div className="BlogPostCardContainer">
+                                        <div className="BlogPostImageContainer">
+                                            <img src={item.blogImage} alt="" />
+                                        </div>
+                                        <div className="BlogPostContentContainer">
+                                            
+                                            <h2>{item.blogTitle}</h2>
+                                            <hr />
+                                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                                <p>{item.blogDate} &nbsp;<b><span>({item.tag})</span></b></p>
+                                                <p>{item.blogCustomName}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </Col>
-                            <Col lg={12} md={24} style={{ width: "100%" }}>
+                                </Col>
+                            ))}
+
+                            {/* <Col lg={12} md={24} style={{ width: "100%" }}>
                                 <div className="BlogPostCardContainer">
                                     <div className="BlogPostImageContainer">
                                         <img src="https://cdn.prod.website-files.com/672087ec85cbe61882560dcd/6741e489ce5fde257ea74bcb_Mask%20group%20(3).jpg" alt="" />
@@ -41,7 +46,7 @@ const InSights = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Col>
+                            </Col> */}
                         </Row>
                     </div>
                 </div>

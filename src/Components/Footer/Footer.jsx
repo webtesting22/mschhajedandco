@@ -54,7 +54,7 @@ const Footer = () => {
                     </Row>
                 </div>
                 <div className="CopyWriteTextContainer">
-                        <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">OutLead solutions.</Link> All rights reserved.</p>
+                        <p>@2025 <Link to="https://www.outleadsolutions.com/" target="_blank">OutLead solutions.</Link> All rights reserved.</p>
                 </div>
             </section>
         </>

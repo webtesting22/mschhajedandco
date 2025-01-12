@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Prata&family=Sora:wght@100..800&family=Varela+Round&display=swap');
+
 
 body {
   background-color: white;
@@ -12,7 +13,7 @@ body {
   --brandColor: #931e95;
   margin: 0px;
   padding: 0px;
-  font-family: "Sora", serif;
+  font-family: "Prata", serif;
 }
 
 .ContainerDefault {
@@ -20,12 +21,15 @@ body {
   max-width: 100%;
 }
 
+h1, h2,h3,h4,h5,h6{
+  font-family: "Prata", serif;
+}
 p {
-  font-family: "Sora", serif;
+  font-family: "Plus Jakarta Sans", serif;
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 400;
-  /* line-height: 1.8; */
+  line-height: 1.5em;
   color: var(--paraColor);
 }
 

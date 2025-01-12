@@ -1,7 +1,11 @@
 const Navigationlinks = [
+    // {
+    //     link: "PEOPLE",
+    //     path: ""
+    // },
     {
-        link: "PEOPLE",
-        path: ""
+        link: "ABOUT US",
+        path: "/about-us"
     },
     {
         link: "PRACTICES",
@@ -38,12 +42,9 @@ const Navigationlinks = [
     },
     {
         link: "INSIGHTS & NEWSROOM",
-        path: ""
+        path: "/insights-newsroom"
     },
-    {
-        link: "ABOUT US",
-        path: "/about-us"
-    },
+   
     {
         link: "CAREER",
         path: ""
