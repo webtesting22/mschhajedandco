@@ -3,7 +3,7 @@ import "../../assets/Styles/HomeHero.css";
 import { Row, Col } from "antd";
 import { useInView } from "react-intersection-observer";
 
-const Counter = ({ value, suffix, trigger }) => {
+export const Counter = ({ value, suffix, trigger }) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -42,6 +42,8 @@ const Counter = ({ value, suffix, trigger }) => {
         </h2>
     );
 };
+
+
 
 const HomeHero = () => {
     const [animateWidth, setAnimateWidth] = useState(false);
@@ -94,19 +96,19 @@ const HomeHero = () => {
                                         <Counter
                                             value={item.value}
                                             suffix={item.suffix}
-                                            trigger={inView} // Trigger animation when in view
+                                            trigger={inView} // Only trigger when in view
                                         />
                                         <p>{item.title}</p>
                                     </div>
                                 ))}
+
                             </div>
                         </Col>
                     </Row>
                 </div>
                 <div
-                    className={`ClipPathImageContainer ${animateWidth ? "animateWidth" : ""} ${
-                        animateTransform ? "animateTransform" : ""
-                    }`}
+                    className={`ClipPathImageContainer ${animateWidth ? "animateWidth" : ""} ${animateTransform ? "animateTransform" : ""
+                        }`}
                 >
                     <img
                         src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

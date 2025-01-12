@@ -8,10 +8,13 @@ import MaheshChhajed from "./MaheshChhajed2.png"
 import HemChhajed from "./HemChhajed2.png"
 import KrunalPatel from "./KrunalPatel.jpg"
 import PreyashiTated from "./PreyashiTated.jpg"
+import { Counter } from "../HomeHero/HomeHero";
+import { useInView } from "react-intersection-observer";
 const AboutUs = () => {
     const [scale, setScale] = useState(1);
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [currentTeamMember, setCurrentTeamMember] = useState(null);
+    const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,16 +26,29 @@ const AboutUs = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+    useEffect(() => {
+        // Start animations after component mounts
+        const timerWidth = setTimeout(() => setAnimateWidth(true), 0);
+        const timerTransform = setTimeout(() => setAnimateTransform(true), 1000);
+
+        return () => {
+            clearTimeout(timerWidth);
+            clearTimeout(timerTransform);
+        };
+    }, []);
+
 
     const CounterContainerData = [
         {
             counterTitle: "Years of Experience",
             counterNumber: 30,
+            suffix: "+",
             iconImage: <GiShakingHands />
         },
         {
             counterTitle: "Happy Clients",
             counterNumber: 500,
+            suffix: "+",
             iconImage: <PiUsersThreeFill />
         }
     ]
@@ -134,14 +150,18 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="CompanyAnimatedNumbersContainer">
+                    <div className="CompanyAnimatedNumbersContainer" ref={ref}>
                         <Row style={{ width: "100%" }}>
-                            {CounterContainerData.map((item, index) => (
-                                <Col lg={6} md={12} style={{ width: "100%" }}>
-                                    <div key={index} className="CounterCardContainer">
+                        {CounterContainerData.map((item, index) => (
+                                <Col lg={6} md={12} style={{ width: "100%" }} key={index}>
+                                    <div className="CounterCardContainer">
                                         <div className="CounterCard">
                                             <span>{item.iconImage}</span>
-                                            <h2>{item.counterNumber}</h2>
+                                            <Counter
+                                                value={item.counterNumber} // Adjust this value based on your needs
+                                                suffix="+"  // Adjust suffix as needed
+                                                trigger={inView} // Use `inView` to trigger the animation when in view
+                                            />
                                             <p>{item.counterTitle}</p>
                                         </div>
                                     </div>
@@ -202,14 +222,14 @@ const AboutUs = () => {
                         {currentTeamMember && (
                             <>
                                 <Row>
-                                    <Col lg={12} md={12} style={{width:"100%"}}>
-                                        <div style={{padding:"10px"}}>
-                                            <img src={currentTeamMember.image} alt="" style={{width:"100%"}}/>
+                                    <Col lg={12} md={12} style={{ width: "100%" }}>
+                                        <div style={{ padding: "10px" }}>
+                                            <img src={currentTeamMember.image} alt="" style={{ width: "100%" }} />
                                         </div>
                                     </Col>
-                                    <Col lg={12} md={12}  style={{width:"100%"}}>
+                                    <Col lg={12} md={12} style={{ width: "100%" }}>
                                         <div className="ModalInsideInfo">
-                                            <h1 style={{marginBottom:"0px"}}>{currentTeamMember.title}</h1>
+                                            <h1 style={{ marginBottom: "0px" }}>{currentTeamMember.title}</h1>
                                             <p style={{ marginTop: "0px" }}>
                                                 <b>Position: </b>
                                                 {currentTeamMember.position}
@@ -224,8 +244,8 @@ const AboutUs = () => {
 
                                 <div>{currentTeamMember.description}</div>
                                 <br /><br />
-                               
-                                
+
+
                             </>
                         )}
                     </Modal>
