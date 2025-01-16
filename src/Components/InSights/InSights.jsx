@@ -2,6 +2,7 @@ import React from "react";
 import "../../assets/Styles/Insights.css"
 import { Row, Col } from "antd";
 import BlogData from "./BlogData";
+import { Link } from "react-router-dom";
 const InSights = () => {
 
     return (
@@ -20,7 +21,6 @@ const InSights = () => {
                                             <img src={item.blogImage} alt="" />
                                         </div>
                                         <div className="BlogPostContentContainer">
-                                            
                                             <h2>{item.blogTitle}</h2>
                                             <hr />
                                             <div style={{ display: "flex", justifyContent: "space-between" }}>

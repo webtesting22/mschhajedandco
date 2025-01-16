@@ -7,19 +7,22 @@ import AboutUs from "../Components/AboutUsComponent/AboutUs";
 import AllBlogs from "../Components/AllBlogs/AllBlogs";
 import PracticesSeparate from "../Components/PracticesHomeCards/PracticesSeparate";
 import ScrollToTopButton from "../Components/ScrollToTop/ScrollToTop";
+import BlogSeparate from "../Components/AllBlogs/BlogSeparate";
 
 const MainRoutes = () => {
     return (
         <Router>
-            <NavigationBar/>
-                <ScrollToTopButton/>
+            <NavigationBar />
+            <ScrollToTopButton />
             <Routes>
                 <Route path="/" element={<HomePageRoutes />} />
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/insights-newsroom" element={<AllBlogs />} />
                 <Route path="/practices/:practiceName" element={<PracticesSeparate />} />
+                <Route path="/insights-newsroom/:Blogsname" element={<BlogSeparate />} />
+
             </Routes>
-            <Footer/>
+            <Footer />
         </Router>
     );
 };

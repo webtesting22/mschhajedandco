@@ -1,0 +1,12 @@
+#BlogSeparateContentContainer .AllBlogsMainContainer {
+    margin-top: 92px;
+}
+
+.BlogImageAndHeadingContainer {
+    min-height: 400px;
+    max-height: 300px;
+}
+
+.BlogImageAndHeadingContainer h2 {
+    text-align: center;
+}

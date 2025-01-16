@@ -1,12 +1,13 @@
 import React from "react";
 import { Tabs, Row, Col } from "antd";
-import BlogData from "../InSights/BlogData";
+import BlogData from "../InSights/BlogData"; // Make sure this imports the correct blog data
 import "../../assets/Styles/AllBlogs.css";
+import { Link } from "react-router-dom";
 
 const AllBlogs = () => {
     const { TabPane } = Tabs;
 
-    // Filter blogs by tag
+    // Function to get blogs by tag
     const getBlogsByTag = (tag) => {
         return BlogData.filter((blog) => blog.tag === tag);
     };
@@ -27,24 +28,26 @@ const AllBlogs = () => {
                                     <Row gutter={[16, 16]}>
                                         {getBlogsByTag("Insights").map((item, index) => (
                                             <Col lg={12} md={24} key={index}>
-                                                <div className="BlogPostCardContainer">
-                                                    <div className="BlogPostImageContainer">
-                                                        <img src={item.blogImage} alt={item.blogTitle} />
-                                                    </div>
-                                                    <div className="BlogPostContentContainer">
-                                                        <h2>{item.blogTitle}</h2>
-                                                        <hr />
-                                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                                            <p>
-                                                                {item.blogDate} &nbsp;
-                                                                <b>
-                                                                    <span>({item.tag})</span>
-                                                                </b>
-                                                            </p>
-                                                            <p>{item.blogCustomName}</p>
+                                                <Link to={`/insights-newsroom/${item.pathName}`}>
+                                                    <div className="BlogPostCardContainer">
+                                                        <div className="BlogPostImageContainer">
+                                                            <img src={item.blogImage} alt={item.blogTitle} />
+                                                        </div>
+                                                        <div className="BlogPostContentContainer">
+                                                            <h2>{item.blogTitle}</h2>
+                                                            <hr />
+                                                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                                                <p>
+                                                                    {item.blogDate} &nbsp;
+                                                                    <b>
+                                                                        <span>({item.tag})</span>
+                                                                    </b>
+                                                                </p>
+                                                                <p>{item.blogCustomName}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             </Col>
                                         ))}
                                     </Row>
@@ -55,24 +58,26 @@ const AllBlogs = () => {
                                     <Row gutter={[16, 16]}>
                                         {getBlogsByTag("Newsroom").map((item, index) => (
                                             <Col lg={12} md={24} key={index}>
-                                                <div className="BlogPostCardContainer">
-                                                    <div className="BlogPostImageContainer">
-                                                        <img src={item.blogImage} alt={item.blogTitle} />
-                                                    </div>
-                                                    <div className="BlogPostContentContainer">
-                                                        <h2>{item.blogTitle}</h2>
-                                                        <hr />
-                                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                                            <p>
-                                                                {item.blogDate} &nbsp;
-                                                                <b>
-                                                                    <span>({item.tag})</span>
-                                                                </b>
-                                                            </p>
-                                                            <p>{item.blogCustomName}</p>
+                                                <Link to={`/insights-newsroom/${item.pathName}`}>
+                                                    <div className="BlogPostCardContainer">
+                                                        <div className="BlogPostImageContainer">
+                                                            <img src={item.blogImage} alt={item.blogTitle} />
+                                                        </div>
+                                                        <div className="BlogPostContentContainer">
+                                                            <h2>{item.blogTitle}</h2>
+                                                            <hr />
+                                                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                                                <p>
+                                                                    {item.blogDate} &nbsp;
+                                                                    <b>
+                                                                        <span>({item.tag})</span>
+                                                                    </b>
+                                                                </p>
+                                                                <p>{item.blogCustomName}</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             </Col>
                                         ))}
                                     </Row>

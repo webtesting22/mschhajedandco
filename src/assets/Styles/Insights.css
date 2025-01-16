@@ -43,6 +43,7 @@
 
 .BlogPostContentContainer h2 {
     font-size: var(--secondSectionHeading);
+    color: black;
 }
 
 .BlogPostContentContainer {
@@ -54,7 +55,7 @@
     border: 1px solid white;
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
     #InSightsContainer .ant-row .ant-col {
         padding: 10px 0px;
     }
