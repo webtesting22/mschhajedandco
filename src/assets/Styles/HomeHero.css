@@ -198,3 +198,11 @@
     }
 
 }
+
+
+@media (min-width:1000px) and (max-width:1300px){
+    #HomeHeroContainer {
+        background-color: var(--sectionColor);
+        margin-bottom: 400px;
+    }
+}
