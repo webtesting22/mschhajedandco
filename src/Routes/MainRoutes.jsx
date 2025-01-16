@@ -8,6 +8,7 @@ import AllBlogs from "../Components/AllBlogs/AllBlogs";
 import PracticesSeparate from "../Components/PracticesHomeCards/PracticesSeparate";
 import ScrollToTopButton from "../Components/ScrollToTop/ScrollToTop";
 import BlogSeparate from "../Components/AllBlogs/BlogSeparate";
+import Careers from "../Components/Career/Career";
 
 const MainRoutes = () => {
     return (
@@ -20,7 +21,7 @@ const MainRoutes = () => {
                 <Route path="/insights-newsroom" element={<AllBlogs />} />
                 <Route path="/practices/:practiceName" element={<PracticesSeparate />} />
                 <Route path="/insights-newsroom/:Blogsname" element={<BlogSeparate />} />
-
+                <Route path="/career" element={<Careers />} />
             </Routes>
             <Footer />
         </Router>

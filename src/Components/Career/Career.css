@@ -1,0 +1,80 @@
+#CareersContentContainer {
+    margin-top: 92px;
+}
+
+#CareersContentContainer .ContainerDefault {
+    padding-top: 80px !important;
+}
+
+#CareersContentContainer .ContainerDefault h1 {
+    letter-spacing: -2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 68px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.11em;
+    max-width: 767px;
+    color: #383c5b;
+}
+
+.CareersCardsContainer {
+    margin: 10px 10px;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    background-color: #efefef;
+    transition: .5s;
+}
+
+.CareersCardsContainer:hover {
+    margin: 10px 10px;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    background-color: #efefef;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .5s;
+}
+
+.CareersCardsContainer h4 {
+    color: var(--BlackColor);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    width: 100%;
+    /* text-align: center; */
+    margin-top: 0px;
+}
+
+.TagStyle {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+
+}
+
+.TagStyle p {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.TagStyle p svg {
+    font-size: 15px;
+}
+
+
+@media (max-width:900px) {
+    .CareersCardsContainer {
+        margin: 10px 0px;
+        border: 1px solid #dfdfdf;
+        padding: 20px;
+        background-color: #efefef;
+    }
+}
