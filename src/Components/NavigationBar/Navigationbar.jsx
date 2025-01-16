@@ -49,7 +49,7 @@ const NavigationBar = () => {
     const renderDropdownMenu = (subLinks) => (
         <Menu>
             {subLinks.map((subLink, index) => (
-                <Menu.Item key={index}>{subLink.link}</Menu.Item>
+                <Link to={`/practices/${subLink.path}`} style={{ background: "transparent" }}><Menu.Item key={index}>{subLink.link}</Menu.Item></Link>
             ))}
         </Menu>
     );
@@ -69,10 +69,13 @@ const NavigationBar = () => {
                         overlay={renderDropdownMenu(navItem.subLinks)}
                         trigger={['hover']}
                         key={index}
+                        style={{ background: "transparent" }}
                     >
+
                         <Button className="navButton">
                             {navItem.link} <DownOutlined />
                         </Button>
+
                     </Dropdown>
                 );
             } else {
@@ -114,7 +117,7 @@ const NavigationBar = () => {
             >
                 <div className="NavigationBarMainContainer">
                     <div className="LogoContainer">
-                        {/* Logo content goes here */}
+                        <Link to="/"><img src="https://mschhajedandco.com/wp-content/uploads/2020/09/MS-Logo.png" alt="" /></Link>
                     </div>
 
                     {/* Desktop Navigation Links */}

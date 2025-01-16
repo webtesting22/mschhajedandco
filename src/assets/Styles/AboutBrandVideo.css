@@ -122,6 +122,26 @@
 
 
 @media (max-width:900px){
+  
+    .AboutBrandComapanyDetails p {
+        text-align: start;
+    }
+.video-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+    .AnimatedVideoHeaderContainer>div h2 {
+        font-size: 45px;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        color: #071D96;
+    }
+.AboutBrandComapanyDetails>div {
+    width: 100%;
+}
+
     .AnimatedVideoHeaderContainer {
         display: flex;
         justify-content: space-between;

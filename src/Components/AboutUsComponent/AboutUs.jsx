@@ -129,6 +129,14 @@ const AboutUs = () => {
         setIsModalVisible(false);
         setCurrentTeamMember(null);
     };
+    useEffect(() => {
+        // Scroll to top when the component mounts
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth", // Adds smooth scrolling
+        });
+    }, []);
     return (
         <>
             <section className="AboutUsContainer">
@@ -152,7 +160,7 @@ const AboutUs = () => {
                     </div>
                     <div className="CompanyAnimatedNumbersContainer" ref={ref}>
                         <Row style={{ width: "100%" }}>
-                        {CounterContainerData.map((item, index) => (
+                            {CounterContainerData.map((item, index) => (
                                 <Col lg={6} md={12} style={{ width: "100%" }} key={index}>
                                     <div className="CounterCardContainer">
                                         <div className="CounterCard">
@@ -192,7 +200,7 @@ const AboutUs = () => {
                             <div className="TeamMembersDataContainer">
                                 <Row>
                                     {formattedTeamData.map((item, index) => (
-                                        <Col key={index} lg={6} md={12}>
+                                        <Col key={index} lg={6} md={12} style={{width:"100%"}}>
                                             <div className="TeamMemberCardContainer" onClick={() => handleCardClick(item)}>
 
                                                 <div>

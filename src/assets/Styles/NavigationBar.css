@@ -46,6 +46,9 @@
     position: relative;
 }
 
+.navButton a{
+    background-color: transparent !important;
+}
 .navButton:hover {
     color: var(--brandColor) !important;
 }
@@ -86,8 +89,20 @@
     background-color: transparent !important;
     font-weight: 600;
 }
+.ant-dropdown-menu-item{
+    background-color: transparent !important;
+}
 
-
+.LogoContainer{
+    display: flex;
+    align-items: center;
+}
+.LogoContainer img{
+    background: rgba(255, 255, 255, 0.827);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); 
+    padding: 10px;
+    width: 150px;
+}
 /* Mobile Styling */
 @media (max-width: 768px) {
     .NavigationLinksContainer {
@@ -98,5 +113,19 @@
     .menuButton {
         display: block;
         /* Show menu button on mobile */
+    }
+    #NavigationBarContainer {
+        padding: 0px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+        height: 90px;
+        max-width: 100%;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0;
+        z-index: 100;
+        transition: top 0.3s ease-in-out;
+        background-color: var(--sectionColor);
+        /* Smooth transition */
     }
 }

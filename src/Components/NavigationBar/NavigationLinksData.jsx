@@ -11,31 +11,40 @@ const Navigationlinks = [
         link: "PRACTICES",
         subLinks: [
             {
-                link: "INDIA STRATEGY- DOING BUSINESS IN INDIA"
+                link: "INDIA STRATEGY- DOING BUSINESS IN INDIA",
+                path: "india-strategy-doing-business-india"
             },
             {
-                link: "START UP SERVICES"
+                link: "START UP SERVICES",
+                path: "start-up-services"
             },
             {
-                link: "ASSURANCES"
+                link: "ASSURANCES",
+                path: "assurances"
             },
             {
-                link: "TRANSACTION ADVISORY"
+                link: "TRANSACTION ADVISORY",
+                path: "transaction-advisory"
             },
             {
-                link: "DIRECT TAXES"
+                link: "DIRECT TAXES",
+                path: "direct-taxes"
             },
             {
-                link: "GOODS AND SERVICE TAX"
+                link: "GOODS AND SERVICE TAX",
+                path: "goods-and-services-tax"
             },
             {
-                link: "TRANSFER PRICING"
+                link: "TRANSFER PRICING",
+                path: "transfer-pricing"
             },
             {
-                link: "KNOWLEDGE PROCESS OUTSOURCING"
+                link: "KNOWLEDGE PROCESS OUTSOURCING",
+                path: "knowledge-process-outsourcing"
             },
             {
-                link: "COMMERCIAL AND LEGAL ASSISTANCE"
+                link: "COMMERCIAL AND LEGAL ASSISTANCE",
+                path: "Commertial-and-legal-assistance"
             }
         ],
         path: ""
@@ -44,7 +53,7 @@ const Navigationlinks = [
         link: "INSIGHTS & NEWSROOM",
         path: "/insights-newsroom"
     },
-   
+
     {
         link: "CAREER",
         path: ""

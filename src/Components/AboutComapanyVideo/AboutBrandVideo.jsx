@@ -5,14 +5,29 @@ import Aboutbrand from "./Aboutbrand.svg";
 const AboutBrandVideo = () => {
     const videoContainerRef = useRef(null);
     const [widthPercentage, setWidthPercentage] = useState(30); // Start width at 30%
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        // Check if it's mobile device
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // Mobile breakpoint (you can adjust this value)
+        };
+
+        // Call once on mount
+        handleResize();
+
+        // Add resize event listener
+        window.addEventListener("resize", handleResize);
+
         const observerCallback = (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     // Calculate the ratio of the intersection to dynamically set width
                     const progress = Math.min(entry.intersectionRatio, 1);
-                    const newWidth = 30 + progress * 50; // Range: 30% to 100%
+                    const newWidth = isMobile
+                        ? 100 // For mobile, set max width to 100%
+                        : 30 + progress * 50; // For desktop, range from 30% to 80%
+
                     setWidthPercentage(newWidth);
                 }
             });
@@ -30,11 +45,12 @@ const AboutBrandVideo = () => {
         }
 
         return () => {
+            window.removeEventListener("resize", handleResize);
             if (videoContainerRef.current) {
                 observer.unobserve(videoContainerRef.current);
             }
         };
-    }, []);
+    }, [isMobile]);
 
     return (
         <>
@@ -52,7 +68,7 @@ const AboutBrandVideo = () => {
                         </div>
                         <div className="animatedSpinBoxContainer">
                             <div className="AnimatedBoxContainer">
-                                <img src={Aboutbrand} alt="" />
+                                <img src={Aboutbrand} alt="About Brand" />
                             </div>
                         </div>
                     </div>

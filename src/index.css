@@ -21,9 +21,15 @@ body {
   max-width: 100%;
 }
 
-h1, h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Prata", serif;
 }
+
 p {
   font-family: "Plus Jakarta Sans", serif;
   margin-bottom: 0;
@@ -31,6 +37,11 @@ p {
   font-weight: 400;
   line-height: 1.5em;
   color: var(--paraColor);
+}
+
+li {
+  font-family: "Plus Jakarta Sans", serif;
+  line-height: 30px;
 }
 
 .SectionPadding {
@@ -103,10 +114,10 @@ p {
   }
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
 
-.ContainerDefault {
-  margin: 0px 10px;
-  max-width: 100%;
-}
+  .ContainerDefault {
+    margin: 0px 10px;
+    max-width: 100%;
+  }
 }

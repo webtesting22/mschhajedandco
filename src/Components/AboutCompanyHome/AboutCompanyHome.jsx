@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/Styles/AboutCompanyHome.css"
 import { Row, Col } from "antd";
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 const AboutComapanyHome = () => {
     return (
         <>
@@ -26,7 +26,7 @@ const AboutComapanyHome = () => {
                                     <h2>Top CA firms in Ahmedabad, Gujarat</h2>
                                     <p>M. S. Chhajed & Co. is one of the leading multi-disciplinary Top Chartered Accountants firm in Ahmedabad, Gujarat. Founded in 1988, the Accounting firms in Gujarat specializes in areas such as audit, assurance services, Tax Structuring Services, tax dispute resolution, foreign exchange regulation, project finance and corporate laws.</p>
                                     <div className="AnimatedBtnContainer">
-                                        <button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button>
+                                        <Link to="/about-us"><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                                     </div>
                                 </div>
                             </Col>
