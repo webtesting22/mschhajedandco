@@ -74,7 +74,9 @@ const PracticesSeparate = () => {
         ),
         "assurances": (
             <>
-                <h2>ASSURANCES</h2>
+                <div className="PracticeImageContainer">
+                    <h2>ASSURANCES</h2>
+                </div>
                 <p><b>Auditing & Assurance Service in India
                 </b></p>
                 <p>The businesses worldwide are changing rapidly, together with dynamic laws, regulations and economic environment. Extensive disclosures requiring detailed analysis of the Financial Statements are mandated under various statues which in turn places significant importance of independent statutory audits. Financial statements are the ultimate report card of a company’s fiscal performance. They enable owners and managers to pursue their business objectives, whether they are raising capital, acquisition, divestiture or restructure. Further meeting investor expectations begins with the completeness, accuracy and fair presentation of information in your financial statements and disclosures. The audit is key to sustaining confidence in both your company and the financial system at large. It must keep pace with a fast-evolving corporate reporting environment – one characterised by investor scepticism and the 24/7 scrutiny of corporate information, including non-financial information. Auditing thus involves much more than just the legal obligation of certifying annual accounts. We are truly the best provider of Audit services in Ahmedabad, Gujarat as well as Audit Service in India.
@@ -103,7 +105,9 @@ const PracticesSeparate = () => {
         ),
         "transaction-advisory": (
             <>
-                <h2>TRANSACTION ADVISORY</h2>
+                <div className="PracticeImageContainer">
+                    <h2>TRANSACTION ADVISORY</h2>
+                </div>
                 <p><b>M&A Consulting services and Project Financing in India</b></p>
                 <p>Inorganic growth can provide a much-needed boost to a company’s capabilities. Investors must evaluate the accounting, tax, regulatory, legal, management and cultural aspects of the target company. While investors would like to have complete and accurate information to make critical decisions, such information is not readily available and is often difficult to evaluate. On-the- ground knowledge greatly improves the probability of a deal’s proper execution and success.</p>
                 <p>While we, at M. S. Chhajed, focus on enabling transactions between a range of operating structures such as corporate entities, limited liability partnerships, trusts and many others, we do so by developing a deep connect with the business model. Our team is involved at every stage of the process followed by post-transaction hand-holding until our client is ready for the final handover. By creating an assumption-led notion of the business model based on research, we gather the ability to see the value it can deliver, and thus make sure that the core of every transaction is driven by ‘trust’. We work as project managers with our goal being the success of your business and its continued growth. We don’t work just as your advisers or consultants but more as your “Implementation Partners”. Our range of transaction advisory and support services encompasses:</p>
@@ -222,7 +226,9 @@ const PracticesSeparate = () => {
         ),
         "direct-taxes": (
             <>
-                <h2>DIRECT TAXES</h2>
+                <div className="PracticeImageContainer">
+                    <h2>DIRECT TAXES</h2>
+                </div>
                 <p>India is on the verge of radical tax changes and has witnessed certain big policy changes such as General Anti Avoidance Rules, Income Computation Disclosure Standards (broadly known as tax accounting standards), Undisclosed Foreign Income and Assets Act, taxation on indirect transfer of Indian Assets in overseas deal, each with its own set of complications and resultant massive impact on the business.</p>
                 <p>With certain uncertainty in Indian Tax regime comes an opportunity, but the key is to be prepared in advance. Most business decisions have tax impact which are complicated in nature and needs proper understanding of various scenarios and their implications for proper decision making and implementation on apt strategies.</p>
                 <p>Our Direct Tax Team possesses significant expertise in domestic and interna-tional tax matters and is committed to assist businesses in developing resilient framework, thereby empowering them to mange tax exposures and mitigate tax risks. We seamlessly combine the research and depth of large firms and personal attention and relationship approach of smaller firms to ensure that our clients’ receive incomparable level of partner and management involvement, quality and timely services and responsiveness to deal with their tax issue in diligent manner. Shorter decision making chains and more senior personal involvement enables us to take a comprehensive view and operate in agile and coordinated way.</p>
@@ -265,7 +271,9 @@ const PracticesSeparate = () => {
         ),
         "transfer-pricing": (
             <>
-                <h2>Transfer Pricing services in India</h2>
+                <div className="PracticeImageContainer">
+                    <h2>Transfer Pricing services in India</h2>
+                </div>
                 <p>Multinational organisations are operating in an environment of unprecedented complexity. Increased inter-company transactions, both domestic as well as cross- border, in midst of evolving transfer pricing regulatory landscape with each country trying to maximise its share of tax revenue, accompanied by increased enforcement activities have made Transfer Pricing and determination of Arms Length price (ALP) a leading risk management issues for organizations.
                 </p>
                 <p>In India, the ongoing enforcement of transfer pricing regulations in the country and adjustments being made focussing on new and more complicated issues have brought to the fore the reality that Transfer pricing controversies are expensive and time- consuming to deal with and frequently result in double taxation of income and lead to considerable uncertainty. Further, with the advent of Base Erosion and Profit Shifting (“BEPS”), transfer pricing is expected to become a focus area for India and other jurisdictions as well.
