@@ -6,11 +6,13 @@ import Footer from "../Components/Footer/Footer";
 import AboutUs from "../Components/AboutUsComponent/AboutUs";
 import AllBlogs from "../Components/AllBlogs/AllBlogs";
 import PracticesSeparate from "../Components/PracticesHomeCards/PracticesSeparate";
+import ScrollToTopButton from "../Components/ScrollToTop/ScrollToTop";
 
 const MainRoutes = () => {
     return (
         <Router>
             <NavigationBar/>
+                <ScrollToTopButton/>
             <Routes>
                 <Route path="/" element={<HomePageRoutes />} />
                 <Route path="/about-us" element={<AboutUs />} />

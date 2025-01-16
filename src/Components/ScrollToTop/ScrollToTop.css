@@ -1,0 +1,18 @@
+/* ScrollToTopButton.css */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #071D96; /* Button background color */
+    border: none;
+    transition:0.5s;
+
+}
+
+/* Optional: Hover effect */
+.scroll-to-top-btn:hover {
+    background-color: #071D96 !important; /* Lighter background on hover */
+    transform: translatey(-5px);
+    transition:0.5s;
+}
