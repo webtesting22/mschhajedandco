@@ -4,7 +4,11 @@ import { Row, Col } from "antd";
 import BlogData from "./BlogData";
 import { Link } from "react-router-dom";
 const InSights = () => {
-
+    // Filter for unique tags
+    const uniqueBlogs = BlogData.filter(
+        (blog, index, self) =>
+            index === self.findIndex((b) => b.tag === blog.tag)
+    );
     return (
         <>
             <section id="InSightsContainer">
@@ -14,24 +18,30 @@ const InSights = () => {
                     </div>
                     <div>
                         <Row>
-                            {BlogData.map((item, index) => (
-                                <Col lg={12} md={24} style={{ width: "100%" }} key={index}>
-                                    <div className="BlogPostCardContainer">
-                                        <div className="BlogPostImageContainer">
-                                            <img src={item.blogImage} alt="" />
-                                        </div>
-                                        <div className="BlogPostContentContainer">
-                                            <h2>{item.blogTitle}</h2>
-                                            <hr />
-                                            <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                                <p>{item.blogDate} &nbsp;<b><span>({item.tag})</span></b></p>
-                                                <p>{item.blogCustomName}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Col>
-                            ))}
-
+                        {uniqueBlogs.map((item, index) => (
+        <Col lg={12} md={24} style={{ width: "100%" }} key={index}>
+          <Link to={`/insights-newsroom/${item.pathName}`}>
+            <div className="BlogPostCardContainer">
+              <div className="BlogPostImageContainer">
+                <img src={item.blogImage} alt={item.blogTitle} />
+              </div>
+              <div className="BlogPostContentContainer">
+                <h2>{item.blogTitle}</h2>
+                <hr />
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <p>
+                    {item.blogDate} &nbsp;
+                    <b>
+                      <span>({item.tag})</span>
+                    </b>
+                  </p>
+                  <p>{item.blogCustomName}</p>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </Col>
+      ))}
                             {/* <Col lg={12} md={24} style={{ width: "100%" }}>
                                 <div className="BlogPostCardContainer">
                                     <div className="BlogPostImageContainer">

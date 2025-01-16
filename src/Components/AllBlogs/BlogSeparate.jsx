@@ -49,7 +49,7 @@ const BlogSeparate = () => {
         "tax-collected-at-source-on-sale-of-goods": (
             <>
                 <div className="BlogImageAndHeadingContainer">
-                    <h2>Relief from GST brouhaha-Solar Industry</h2>
+                    <h2>Tax Collected at Source on Sale of Goods</h2>
                 </div>
                 <p>Vide Finance Act, 2020, new clause (1H) has been inserted in section 206C of the Income Tax Act, 1961 (“the Act”) to expand the scope of Tax Collection at Source (“TCS”) provisions. A seller of goods is now required to collect tax at source at the rate of 0.1% from a buyer of goods on receipt of consideration for sale of goods. Prior to the above insertion, TCS provisions were applicable on sale of selected goods namely, alocholic liquor for human consumption, scrap, tendu leaves, timber obtained from forest, lease contract of parking lots and toll plaza.</p>
                 <div className="AnimatedBtnContainer">
