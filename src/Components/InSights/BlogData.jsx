@@ -10,7 +10,7 @@ const BlogData = [
     {
         tag: "Insights",
         blogImage: "https://cdn.prod.website-files.com/672087ec85cbe61882560dcd/6741e489ce5fde257ea74bcb_Mask%20group%20(3).jpg",
-        blogTitle: "Gst-Return",
+        blogTitle: "GST-Return",
         blogDate: "October 19, 2020",
         blogCustomName: "Karan Patel",
         pathName: "gst-return"

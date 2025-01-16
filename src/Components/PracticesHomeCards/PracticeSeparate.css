@@ -38,3 +38,7 @@
 .PracticeImageContainer h2 {
     text-align: center;
 }
+ .separatePracticeContainer li{
+font-style: italic;
+color: var(--paraColor);
+ }

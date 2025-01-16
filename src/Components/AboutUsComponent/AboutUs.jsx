@@ -195,7 +195,7 @@ const AboutUs = () => {
                     <div className="TeamPeoplesContaner">
                         <div className="ContainerDefault">
                             <div>
-                                <h2>Team Peoples</h2>
+                                <h2>Team Members</h2>
                             </div>
                             <div className="TeamMembersDataContainer">
                                 <Row>

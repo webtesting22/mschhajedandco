@@ -12,7 +12,8 @@ const BlogSeparate = () => {
                 <div className="BlogImageAndHeadingContainer">
                     <h2>Relaxation in Due Dates</h2>
                 </div>
-                <p>Amidst the global pandemic and with phase wise re-opening of the economy, the Central Board of Direct Taxes has extended the due dates for various direct tax compliances.</p>
+                <p>Amidst the global pandemic and the phased reopening of the economy, the Central Board of Direct Taxes has extended the due dates for various direct tax compliances.
+                </p>
                 <div className="AnimatedBtnContainer">
                     <Link to=""><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                 </div>
@@ -23,11 +24,7 @@ const BlogSeparate = () => {
                 <div className="BlogImageAndHeadingContainer">
                     <h2>GST Return</h2>
                 </div>
-                <p>The document is intended for private circulation and for knowledge sharing purpose only. This
-                    material and the information contained herein is intended to provide general information on a
-                    particular subject or subjects and is not an exhaustive treatment of such subject(s). The information
-                    is not intended to be relied upon as the sole basis for any decision which may affect you or your
-                    business.
+                <p>The document is intended for private circulation and knowledge-sharing purposes only. The material and information contained herein are intended to provide general information on a particular subject or subjects and do not constitute an exhaustive treatment of such subject(s). The information is not intended to be relied upon as the sole basis for any decision that may affect you or your business.
 
                 </p>
                 <div className="AnimatedBtnContainer">
@@ -40,7 +37,7 @@ const BlogSeparate = () => {
                 <div className="BlogImageAndHeadingContainer">
                     <h2>Relief from GST brouhaha-Solar Industry</h2>
                 </div>
-                <p>Under the leadership of our Hon’ble Prime Minister, India is undertaking the largest renewable capacity expansion programme in the world. Ministry of New and Renewable Energy (‘MNRE’) has taken several steps to fructify the clean energy goal of current government by implementing various schemes such as Solar Park, Solar Roof Top Scheme, Solar PV power plants on Canal Bank and Canal Tops etc.</p>
+                <p>Under the leadership of our Hon’ble Prime Minister, India is undertaking the largest renewable capacity expansion program in the world. The Ministry of New and Renewable Energy (MNRE) has taken several steps to achieve the clean energy goals of the current government by implementing various schemes, such as the Solar Park Scheme, Solar Rooftop Scheme, and Solar PV power plants on canal banks and canal tops.</p>
                 <div className="AnimatedBtnContainer">
                     <Link to=""><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                 </div>
@@ -51,7 +48,7 @@ const BlogSeparate = () => {
                 <div className="BlogImageAndHeadingContainer">
                     <h2>Tax Collected at Source on Sale of Goods</h2>
                 </div>
-                <p>Vide Finance Act, 2020, new clause (1H) has been inserted in section 206C of the Income Tax Act, 1961 (“the Act”) to expand the scope of Tax Collection at Source (“TCS”) provisions. A seller of goods is now required to collect tax at source at the rate of 0.1% from a buyer of goods on receipt of consideration for sale of goods. Prior to the above insertion, TCS provisions were applicable on sale of selected goods namely, alocholic liquor for human consumption, scrap, tendu leaves, timber obtained from forest, lease contract of parking lots and toll plaza.</p>
+                <p>Vide the Finance Act, 2020, a new clause (1H) has been inserted into Section 206C of the Income Tax Act, 1961 (“the Act”), to expand the scope of Tax Collection at Source (“TCS”) provisions. A seller of goods is now required to collect tax at source at the rate of 0.1% from a buyer of goods upon receipt of consideration for the sale of goods. Prior to this insertion, TCS provisions were applicable only to the sale of selected goods, namely alcoholic liquor for human consumption, scrap, tendu leaves, timber obtained from forests, and lease contracts for parking lots and toll plazas.</p>
                 <div className="AnimatedBtnContainer">
                     <Link to=""><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                 </div>
@@ -62,7 +59,7 @@ const BlogSeparate = () => {
                 <div className="BlogImageAndHeadingContainer">
                     <h2>Doing Business in India</h2>
                 </div>
-                <p>This guide has been prepared by M.S. Chhajed & Co. with the intent to giving stakeholders an overview of the demographic profile of India, key sectors, an insight into the regulatory framework, form of business enterprises and relevant tax regimes in India in a concise manner. The information presented in this guide has been validated upto 31st March 2020.</p>
+                <p>This guide has been prepared by M.S. Chhajed & Co. with the intent of providing stakeholders with an overview of India’s demographic profile, key sectors, insights into the regulatory framework, forms of business enterprises, and relevant tax regimes in a concise manner. The information presented in this guide has been validated up to 31st March 2020.</p>
                 <div className="AnimatedBtnContainer">
                     <Link to=""><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                 </div>
@@ -73,11 +70,7 @@ const BlogSeparate = () => {
                 <div className="BlogImageAndHeadingContainer">
                     <h2>Equalisation Levy</h2>
                 </div>
-                <p>Business in today’s digital age is to a significant extent agnostic to geographical
-                    boundaries. New and innovative business models have the taxman grappling with
-                    numerous challenges regarding the taxing provisions of such transaction. The
-                    conventional approach of taxation based on physical presence of a business in a particular
-                    jurisdiction seems out dated.</p>
+                <p>In today’s digital age, business operations are largely agnostic to geographical boundaries. New and innovative business models present tax authorities with numerous challenges in interpreting and applying taxing provisions to such transactions. The conventional approach to taxation, based on the physical presence of a business in a particular jurisdiction, now seems outdated.</p>
                 <div className="AnimatedBtnContainer">
                     <Link to=""><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                 </div>

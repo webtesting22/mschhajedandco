@@ -9,7 +9,7 @@ const AboutComapanyHome = () => {
             <section id="AboutCompanyHomeContainer">
                 <div className="ContainerDefault">
                     <div className="AboutCompanyHomeMainContainer ">
-                        <h4>About&nbsp;M.S. CHHAJED AND CO</h4>
+                        <h4>About&nbsp;M.S. CHHAJED AND CO.</h4>
                     </div>
                     <div className="SectionPadding">
 
@@ -24,7 +24,7 @@ const AboutComapanyHome = () => {
                             <Col lg={12}>
                                 <div className="AboutCompanyContentHomeContainer">
                                     <h2>Top CA firms in Ahmedabad, Gujarat</h2>
-                                    <p>M. S. Chhajed & Co. is one of the leading multi-disciplinary Top Chartered Accountants firm in Ahmedabad, Gujarat. Founded in 1988, the Accounting firms in Gujarat specializes in areas such as audit, assurance services, Tax Structuring Services, tax dispute resolution, foreign exchange regulation, project finance and corporate laws.</p>
+                                    <p>M. S. Chhajed & Co. is one of the leading multi-disciplinary Top Chartered Accountants firm in Ahmedabad, Gujarat. Founded in 1988, the Accounting firms in Gujarat specializes in areas such as Audit, Assurance Services, Tax Structuring Services, Tax Dispute Resolution, Foreign Exchange Regulation, Project Finance and Corporate Laws.</p>
                                     <div className="AnimatedBtnContainer">
                                         <Link to="/about-us"><button className="CommonBtnStyle"><FaArrowRightLong />&nbsp;&nbsp;READ MORE&nbsp;&nbsp;<FaArrowRightLong /></button></Link>
                                     </div>

@@ -94,8 +94,8 @@ const AboutBrandVideo = () => {
                     </div>
                     <div className="AboutBrandComapanyDetails">
                         <div>
-                            <h2>A independent member of PrimeGlobal</h2>
-                            <p>PrimeGlobal is one of the 5 largest associations of independent accounting firms in the world, comprised of approximately 300 highly successful independent public accounting firms in over 90 countries. PrimeGlobal’s independent member firms house a combined total of over 2,100 partners, 24,000 employees.</p>
+                            <h2>An independent member of PrimeGlobal</h2>
+                            <p>PrimeGlobal is one of the Five largest associations of independent accounting firms in the world, comprising approximately 300 highly successful independent public accounting firms across over 90 countries. PrimeGlobal’s independent member firms collectively include more than 2,100 partners and 24,000 employees.</p>
                         </div>
                     </div>
                 </div>
