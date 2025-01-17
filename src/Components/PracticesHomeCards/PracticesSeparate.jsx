@@ -51,7 +51,7 @@ const PracticesSeparate = () => {
             <>
                 <div className="PracticeImageContainer">
                     <h2>START UP SERVICES</h2>
-                    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <img src="/Images/START UP SERVICES.jpg" alt="" />
                 </div>
                 <p>
                     The business environment worldwide is changing rapidly, along with dynamic laws, regulations, and economic conditions. Extensive disclosures requiring detailed analysis of financial statements are mandated under various statutes, placing significant importance on independent statutory audits. Financial statements serve as the ultimate report card of a company’s fiscal performance. They enable owners and managers to pursue their business objectives, whether related to raising capital, acquisitions, divestitures, or restructuring. Furthermore, meeting investor expectations begins with the completeness, accuracy, and fair presentation of information in your financial statements and disclosures.
@@ -80,6 +80,7 @@ const PracticesSeparate = () => {
             <>
                 <div className="PracticeImageContainer">
                     <h2>ASSURANCES</h2>
+                    <img src="/Images/ASSURANCES.jpg" alt="" />
                 </div>
                 <p><b>Auditing & Assurance Service in India
                 </b></p>
@@ -116,6 +117,7 @@ const PracticesSeparate = () => {
             <>
                 <div className="PracticeImageContainer">
                     <h2>TRANSACTION ADVISORY</h2>
+                    <img src="/Images/TRANSACTION ADVISORY.jpg" alt="" />
                 </div>
                 <p><b>M&A Consulting Services and Project Financing in India                </b></p>
                 <p>Inorganic growth can provide a much-needed boost to a company’s capabilities. Investors must evaluate the accounting, tax, regulatory, legal, management, and cultural aspects of the target company. While investors would like to have complete and accurate information to make critical decisions, such information is not always readily available and is often difficult to evaluate. On-the-ground knowledge greatly improves the probability of a deal’s proper execution and success.
@@ -247,6 +249,7 @@ const PracticesSeparate = () => {
             <>
                 <div className="PracticeImageContainer">
                     <h2>DIRECT TAXES</h2>
+                    <img src="/Images/DIRECT TAXES.jpg" alt="" />
                 </div>
                 <p>India is on the verge of radical tax changes and has witnessed significant policy shifts such as the General Anti-Avoidance Rules (GAAR), Income Computation Disclosure Standards (commonly known as tax accounting standards), the Undisclosed Foreign Income and Assets Act, and taxation on the indirect transfer of Indian assets in overseas deals—each with its own set of complexities and massive impacts on businesses.</p>
                 <p>With uncertainty in the Indian tax regime comes opportunity, but the key is to be prepared in advance. Most business decisions have tax implications that are complex in nature and require a proper understanding of various scenarios and their consequences for effective decision-making and strategy implementation.</p>
@@ -298,6 +301,7 @@ const PracticesSeparate = () => {
             <>
                 <div className="PracticeImageContainer">
                     <h2>Transfer Pricing services in India</h2>
+                    <img src="/Images/Transfer Pricing services in India.jpg" alt="" />
                 </div>
                 <p>Multinational organizations are operating in an environment of unprecedented complexity. Increased inter-company transactions, both domestic and cross-border, coupled with an evolving transfer pricing regulatory landscape—where each country seeks to maximize its share of tax revenue—alongside heightened enforcement activities, have made Transfer Pricing and the determination of Arm’s Length Price (ALP) critical risk management issues for organizations.
                 </p>
@@ -368,6 +372,10 @@ const PracticesSeparate = () => {
         ),
         "knowledge-process-outsourcing": (
             <>
+                <div className="PracticeImageContainer">
+                    <h2>Knowledge Process Outsourcing</h2>
+                    <img src="/Images/knowledge procces outsorcing 01.jpg" alt="" />
+                </div>
                 <p>Back-office and support functions demand significant resources from an organization in terms of manpower, competence, accuracy, and time. These factors often transform such functions into a significant cost center for organizations. Outsourcing is increasingly being leveraged by organizations to focus on core activities that drive strategic results while transferring back-office and support functions, including compliance activities, to competent and knowledgeable service providers. It has emerged as a strategic tool to enhance performance, increase flexibility, control costs, and optimize operations.</p>
                 <p>At M. S. Chhajed & Co., we help you identify functions that can be successfully outsourced and work with you to develop and implement measurable outsourcing solutions that align with your key business goals.</p>
                 <p>The Accounts Outsourcing team at M. S. Chhajed & Co. can help your business thrive by taking over routine yet complex activities like payroll management and bookkeeping.
@@ -435,6 +443,10 @@ const PracticesSeparate = () => {
         ),
         "Commertial-and-legal-assistance": (
             <>
+                <div className="PracticeImageContainer">
+                    <h2>Commertial and Legal Assistance</h2>
+                    <img src="/Images/Commercial and ligal assistent in accounting.jpg" alt="" />
+                </div>
                 <p>At M. S. Chhajed & Co., our focus extends beyond legal intricacies. We assess the financial implications of each agreement or document for all parties involved, both in the short and long term, while considering tax and other related consequences. Our range of commercial and legal assistance services includes:</p>
                 <p><b>Commercial Drafting</b></p>
                 <p>The establishment and operation of a corporation require substantial and timely compliance with local statutes and regulations. To ensure adherence to these requirements, we provide comprehensive legal services and support, including regulatory advice and compliance. Our assistance covers the following areas:</p>

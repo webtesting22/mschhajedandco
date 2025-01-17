@@ -25,7 +25,7 @@
 }
 
 .PracticeImageContainer {
-    height: 500px;
+    /* height: 500px; */
     overflow: hidden;
 }
 
@@ -38,7 +38,8 @@
 .PracticeImageContainer h2 {
     text-align: center;
 }
- .separatePracticeContainer li{
-font-style: italic;
-color: var(--paraColor);
- }
+
+.separatePracticeContainer li {
+    font-style: italic;
+    color: var(--paraColor);
+}

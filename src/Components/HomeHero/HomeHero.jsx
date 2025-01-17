@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../../assets/Styles/HomeHero.css";
 import { Row, Col } from "antd";
 import { useInView } from "react-intersection-observer";
-
 export const Counter = ({ value, suffix, trigger }) => {
     const [count, setCount] = useState(0);
 
@@ -111,7 +110,7 @@ const HomeHero = () => {
                         }`}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="/Images/CA firms 01.jpg"
                         alt=""
                     />
                 </div>
