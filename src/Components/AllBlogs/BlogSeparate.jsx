@@ -23,6 +23,9 @@ const BlogSeparate = () => {
             <>
                 <div className="BlogImageAndHeadingContainer">
                     <h2>GST Return</h2>
+                    <div>
+                    <img src="/Images/GST.jpg" alt="" />
+                    </div>
                 </div>
                 <p>The document is intended for private circulation and knowledge-sharing purposes only. The material and information contained herein are intended to provide general information on a particular subject or subjects and do not constitute an exhaustive treatment of such subject(s). The information is not intended to be relied upon as the sole basis for any decision that may affect you or your business.
 

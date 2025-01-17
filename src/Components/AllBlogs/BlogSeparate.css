@@ -2,9 +2,17 @@
     margin-top: 92px;
 }
 
-.BlogImageAndHeadingContainer {
-    min-height: 400px;
-    max-height: 300px;
+.BlogImageAndHeadingContainer>div {
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.BlogImageAndHeadingContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .BlogImageAndHeadingContainer h2 {
