@@ -46,9 +46,10 @@
     position: relative;
 }
 
-.navButton a{
+.navButton a {
     background-color: transparent !important;
 }
+
 .navButton:hover {
     color: var(--brandColor) !important;
 }
@@ -89,22 +90,52 @@
     background-color: transparent !important;
     font-weight: 600;
 }
-.ant-dropdown-menu-item{
+
+.ant-dropdown-menu-item {
     background-color: transparent !important;
 }
 
-.LogoContainer{
+.LogoContainer {
     display: flex;
     align-items: center;
 }
-.LogoContainer img{
+
+.LogoContainer img {
     background: rgba(255, 255, 255, 0.827);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
     padding: 10px;
     width: 150px;
 }
+
 /* Mobile Styling */
 @media (max-width: 768px) {
+    .ant-drawer-body .ant-collapse {
+        border: 0px solid transparent;
+        background-color: transparent;
+    }
+    .ant-drawer-body .mobileNavHeaderLink{
+        color: black;
+    }
+
+    .ant-collapse-content .ant-btn a{
+        color: black;
+    }
+    .ant-drawer-body .ant-collapse:nth-child(2) .ant-collapse-item .ant-collapse-expand-icon{
+      opacity: 1;
+    }
+    .ant-drawer-body .ant-collapse .ant-collapse-item .ant-collapse-expand-icon {
+        opacity: 0;
+    }
+
+    .ant-drawer-body .ant-collapse:first-child .ant-collapse-content {
+        display: none;
+    }
+
+    .ant-drawer-body .ant-collapse:nth-child(3) .ant-collapse-content,
+    .ant-drawer-body .ant-collapse:nth-child(4) .ant-collapse-content {
+        display: none;
+    }
+
     .NavigationLinksContainer {
         display: none;
         /* Hide normal links on mobile */
@@ -114,6 +145,7 @@
         display: block;
         /* Show menu button on mobile */
     }
+
     #NavigationBarContainer {
         padding: 0px 15px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.251);

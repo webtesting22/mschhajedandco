@@ -59,4 +59,13 @@
     #InSightsContainer .ant-row .ant-col {
         padding: 10px 0px;
     }
+
+.InsightsHeaderContainer h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0px;
+    /* color: #071D96; */
+    text-align: center;
+
+}
 }

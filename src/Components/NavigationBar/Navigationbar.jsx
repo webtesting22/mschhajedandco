@@ -90,20 +90,41 @@ const NavigationBar = () => {
 
     const renderMobileNavigationLinks = () => {
         return Navigationlinks.map((navItem, index) => (
-            <Collapse key={index} defaultActiveKey={navItem.subLinks ? ['1'] : []}>
-                <Panel header={navItem.link} key="1">
-                    {navItem.subLinks &&
+            <Collapse accordion>
+            {/* {Navigationlinks.map((navItem, index) => ( */}
+                <Panel 
+                    header={
+                        navItem.subLinks ? (
+                            // If subLinks exist, header is just a title (no direct link)
+                            <span className="mobileNavHeader">{navItem.link}</span>
+                        ) : (
+                            // If no subLinks, header is a clickable link
+                            <Link
+                                to={navItem.path}
+                                className="mobileNavHeaderLink"
+                                onClick={handleCloseDrawer}
+                            >
+                                {navItem.link}
+                            </Link>
+                        )
+                    }
+                    key={index}
+                >
+                    {navItem.subLinks && 
                         navItem.subLinks.map((subLink, idx) => (
                             <Button
                                 key={idx}
                                 type="link"
-                                onClick={() => handleMobileMenuItemClick(subLink.link)}
+                                className="mobileNavSubLink"
+                                onClick={handleCloseDrawer}
                             >
-                                {subLink.link}
+                                <Link to={`/practices/${subLink.path}`}>{subLink.link}</Link>
                             </Button>
-                        ))}
+                        ))
+                    }
                 </Panel>
-            </Collapse>
+            {/* ))} */}
+        </Collapse>
         ));
     };
 

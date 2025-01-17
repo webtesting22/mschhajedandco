@@ -51,6 +51,12 @@
 }
 
 @media (max-width:900px){
+    .AboutCompanyContentHomeContainer h2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 0px;
+        color: var(--sectionColor);
+    }
     .AboutCompanyContentHomeContainer {
         padding-left: 0px;
         padding-top: 20px;

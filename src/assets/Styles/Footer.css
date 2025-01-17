@@ -73,17 +73,20 @@
 .LegalInfo {
     padding-left: 30px;
 }
-.SocialContainer svg{
+
+.SocialContainer svg {
     color: white;
     font-size: 20px;
     margin-right: 10px;
 }
-.SocialContainer ul{
+
+.SocialContainer ul {
     padding: 0px;
     list-style: none;
     color: white;
 }
-.SocialContainer ul li{
+
+.SocialContainer ul li {
     display: flex;
     align-items: center;
 }
@@ -108,7 +111,8 @@
     transition: .5s;
 }
 
-.LegalInfo ul li, .SocialContainer ul li {
+.LegalInfo ul li,
+.SocialContainer ul li {
     list-style: none;
     padding: 10px 0px;
     color: white;
@@ -116,35 +120,43 @@
     transition: .5s;
 }
 
-.LegalInfo ul li:hover, .SocialContainer ul li:hover {
+.LegalInfo ul li:hover,
+.SocialContainer ul li:hover {
     color: var(--brandColor);
     margin-left: 10px;
     transition: .5s;
     cursor: pointer;
 }
-.CopyWriteTextContainer{
+
+.CopyWriteTextContainer {
     background-color: rgb(18, 18, 18);
-padding: 20px 0px;
-border-top: 1px solid rgba(255, 255, 255, 0.251);
-margin-top: 20px;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.251);
+    margin-top: 20px;
 }
-.CopyWriteTextContainer p{
+
+.CopyWriteTextContainer p {
     text-align: center;
     margin: 0px;
     color: white;
-    font-size:16px;
+    font-size: 16px;
 }
-.CopyWriteTextContainer a{
+
+.CopyWriteTextContainer a {
     color: white;
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
+    .LegalInfo {
+        display: none;
+    }
+
     .CompanyContainer,
-.SocialContainer,
-.LegalInfo {
-    padding-left: 10px;
-}
+    .SocialContainer,
+    .LegalInfo {
+        padding-left: 10px;
+    }
 }

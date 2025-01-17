@@ -122,7 +122,14 @@
 
 
 @media (max-width:900px){
-  
+    .AboutBrandComapanyDetails h2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 0px;
+        color: var(--sectionColor);
+        text-align: center;
+        text-transform: uppercase;
+    }
     .AboutBrandComapanyDetails p {
         text-align: start;
     }
